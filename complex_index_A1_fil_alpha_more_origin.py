@@ -209,7 +209,7 @@ if __name__ == "__main__":
     # filtration_range=[i/10.0 for i in range(40,101)]
     filtration_range=list(np.round(np.arange(1,10.1,0.10),2))
     # filtration_range=list(np.round(np.arange(1,10.1,0.20),2))
-    for ename in range(333,334):
+    for ename in range(344,345):
     # for ename in range(333,527):
         print(ename)
         file=pd.read_excel('./coodinates/origin_mutation_coodinates_'+resid1+'_'+resid2+'/'+'6M0J_'+str(ename)+'_'+resid1+'_'+resid2+'_origin'+area+'_coodinates.xlsx',index_col=0)

@@ -208,7 +208,7 @@ if __name__ == "__main__":
     # filtration_range=[1,2]
     filtration_range=list(np.round(np.arange(1,10.1,0.10),2))
     # filtration_range=list(np.round(np.arange(1,10.1,0.20),2))
-    for ename in file_name[2400:]:
+    for ename in file_name[:1]:
         print(ename,file_name.index(ename))
         # file=pd.read_excel('../TDA_0606_alpha/mutation_coodinates/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
         file=pd.read_excel('./coodinates/mutation_coodinates_'+resid1+'_'+resid2+'/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)

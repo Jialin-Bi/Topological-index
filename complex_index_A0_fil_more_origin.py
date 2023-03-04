@@ -202,7 +202,7 @@ if __name__ == "__main__":
     resid2='C'
     area='_mutation'#binding
     filtration_range=[i/10.0 for i in range(10,101)]
-    for ename in range(526,527):#333 527
+    for ename in range(344,345):#333 527
         print(ename)
         '''
         #generate simplices from distance matrix--------
