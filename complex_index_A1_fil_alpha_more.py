@@ -1189,4 +1189,3 @@ if __name__ == "__main__":
         File1.close()
         print('finish')
 
->>>>>>> 75a591fa05177761e37a2f428e0173a1ec357a48
