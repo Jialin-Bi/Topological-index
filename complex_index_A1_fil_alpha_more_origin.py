@@ -212,7 +212,8 @@ if __name__ == "__main__":
     for ename in range(344,345):
     # for ename in range(333,527):
         print(ename)
-        file=pd.read_excel('./coodinates/origin_mutation_coodinates_'+resid1+'_'+resid2+'/'+'6M0J_'+str(ename)+'_'+resid1+'_'+resid2+'_origin'+area+'_coodinates.xlsx',index_col=0)
+        #file=pd.read_excel('./coodinates/origin_mutation_coodinates_'+resid1+'_'+resid2+'/'+'6M0J_'+str(ename)+'_'+resid1+'_'+resid2+'_origin'+area+'_coodinates.xlsx',index_col=0)
+        file=pd.read_excel('./coodinates/'+'6M0J_'+str(ename)+'_'+resid1+'_'+resid2+'_origin'+area+'_coodinates.xlsx',index_col=0)
         file_col=file.columns
         file_index=file.index
         file_value=file.values
@@ -1187,4 +1188,3 @@ if __name__ == "__main__":
                     flag=0
                 writing_File1.writerow([filtration_value]+list(result.values()))
         File1.close()
->>>>>>> 75a591fa05177761e37a2f428e0173a1ec357a48
