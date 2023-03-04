@@ -216,7 +216,8 @@ if __name__ == "__main__":
         
 
         #generate simplices from-coodinates
-        file=pd.read_excel('./coodinates/mutation_coodinates_'+resid1+'_'+resid2+'/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
+        #file=pd.read_excel('./coodinates/mutation_coodinates_'+resid1+'_'+resid2+'/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
+        file=pd.read_excel('./coodinates/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
         file_col=file.columns
         file_index=file.index
         file_value=file.values
