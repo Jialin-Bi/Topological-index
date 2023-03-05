@@ -11,7 +11,7 @@ Details about each step
 
 Step 1: read mutation coordinate from PDB
 
-Examples of mutated coordinates are in the “coodinates” folder
+Examples of mutated coordinates are in the “coordinates” folder
 
 Step 2: Simplicial complex representation and Topological indices generation
 
