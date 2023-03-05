@@ -121,7 +121,7 @@ def shortest_path(simplex_adjacency_matrix):
         nodes_dict[a]=count
         count+=1   
     for a in Graph.nodes():
-        pi=p[a]#node a 可以到达的点的路径
+        pi=p[a]#node a path
         for b in pi:
             i=nodes_dict[a]
             j=nodes_dict[b]
@@ -141,7 +141,7 @@ def shortest_path_from_graph(Graph):
         nodes_dict[a]=count
         count+=1   
     for a in Graph.nodes():
-        pi=p[a]#node a 可以到达的点的路径
+        pi=p[a]#node a path
         for b in pi:
             i=nodes_dict[a]
             j=nodes_dict[b]
@@ -232,7 +232,7 @@ if __name__ == "__main__":
             #generate simplices from-coodinates------------------------------------------------------------------ 
             rips_complex = gudhi.RipsComplex( points=file_value[:,-3:], max_edge_length=filtration_value)
             
-            simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)#统计simplex的最高维数
+            simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)#simplex dimension
             val = simplex_tree.get_filtration()     
             simplices_list=[]
             simplices = set()                
@@ -270,7 +270,7 @@ if __name__ == "__main__":
                 nodes=graph.nodes
                 edges=graph.edges
                 
-                #是基于adjacency的index---------------------------------------------------------------------   
+                #adjacency based index---------------------------------------------------------------------   
                 
                 n=len(nodes)
                 m=len(edges)
@@ -303,7 +303,7 @@ if __name__ == "__main__":
                 #     ad=nx.diameter(graph)
                 
                 #betweenness_centrality
-                #使用了归一化2/((N-1)*(N-2)) c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
+                #2/((N-1)*(N-2)) c_B(v) =\sum_{s,t \in V} \frac{\sigma(s, t|v)}{\sigma(s, t)}
                 bc_node =nx.betweenness_centrality(graph,normalized=True)
                 bc_mean=np.mean(list(bc_node.values()))
                 bc_sum=np.sum(list(bc_node.values()))
@@ -350,7 +350,7 @@ if __name__ == "__main__":
                 cl_sd=np.std(list(cl.values()), ddof=1)
             
                 #average communicability  & average communicabolity angle
-                Gpq = nx.communicability_exp(graph)#字典中包含字典
+                Gpq = nx.communicability_exp(graph)#dict
                 Gpq_val_list=[]
                 Gpq_val=0
                 Cpq_val=0
@@ -657,7 +657,7 @@ def shortest_path(simplex_adjacency_matrix):
         nodes_dict[a]=count
         count+=1   
     for a in Graph.nodes():
-        pi=p[a]#node a 可以到达的点的路径
+        pi=p[a]#node a path
         for b in pi:
             i=nodes_dict[a]
             j=nodes_dict[b]
@@ -677,7 +677,7 @@ def shortest_path_from_graph(Graph):
         nodes_dict[a]=count
         count+=1   
     for a in Graph.nodes():
-        pi=p[a]#node a 可以到达的点的路径
+        pi=p[a]#node a path
         for b in pi:
             i=nodes_dict[a]
             j=nodes_dict[b]
