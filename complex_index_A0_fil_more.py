@@ -143,7 +143,7 @@ def shortest_path_from_graph(Graph):
         nodes_dict[a]=count
         count+=1   
     for a in Graph.nodes():
-        pi=p[a]#node a 可以到达的点的路径
+        pi=p[a]#node a path
         for b in pi:
             i=nodes_dict[a]
             j=nodes_dict[b]
@@ -199,8 +199,8 @@ if __name__ == "__main__":
     file_name= eval(Note2.read())
     Note2.close()
     
-    resid1='O'#'O'
-    resid2='O'#'O'
+    resid1='C'#'O'
+    resid2='C'#'O'
     # ename='6M0J_E_A_411_D'
     area='_mutation'#binding
     filtration_range=list(np.round(np.arange(1,10.1,0.10),2))
@@ -216,8 +216,8 @@ if __name__ == "__main__":
         
 
         #generate simplices from-coodinates
-        #file=pd.read_excel('./coodinates/mutation_coodinates_'+resid1+'_'+resid2+'/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
-        file=pd.read_excel('./coodinates/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
+        #file=pd.read_excel('./coordinates/mutation_coodinates_'+resid1+'_'+resid2+'/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
+        file=pd.read_excel('./coordinates/'+ename+'_'+resid1+'_'+resid2+area+'_coodinates.xlsx',index_col=0)
         file_col=file.columns
         file_index=file.index
         file_value=file.values
@@ -235,7 +235,7 @@ if __name__ == "__main__":
             #generate simplices from coodinates-------------------------------------------------------------------- 
             rips_complex = gudhi.RipsComplex( points=file_value[:,-3:], max_edge_length=filtration_value)
             
-            simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)#统计simplex的最高维数
+            simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)#simplex dimension
             val = simplex_tree.get_filtration()     
             simplices_list=[]
             simplices = set()                
