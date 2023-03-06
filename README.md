@@ -1,7 +1,4 @@
-# Topological-index
-Multiscale topological indices
-
-Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations
+# Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations
 
 This manual is for the code implementation of the paper "Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations".
 Preparation
