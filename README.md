@@ -1,6 +1,12 @@
 # Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations
 
 This manual is for the code implementation of the paper "Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations".
+
+
+Data
+[6m0j-rbd1-pdb-file]{https://drive.google.com/drive/folders/1dUHg50WNLhfWOuAQj5Oa3HNMawTQuFeL?usp=sharing}
+
+
 Preparation
 
 Code Requirements Platform: Python>=3.6
