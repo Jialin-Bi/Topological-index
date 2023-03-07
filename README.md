@@ -12,14 +12,11 @@ The benchmark dataset from S-protein and ACE2 complex 6M0J, which contains 3669 
 
 ## Preparation
 
-`<hello world>`
 
 ```
+Code Requirements Platform: Python>=3.6
 
-#Code Requirements Platform: Python>=3.6
-
-#Python Packages needed: math, numpy>=1.19.5, scipy>=1.4.1
-
+Python Packages needed: math, numpy>=1.19.5, scipy>=1.6.2, gudhi 3.7.1, networkx 2.5
 ```
 
 ## Details about each step
