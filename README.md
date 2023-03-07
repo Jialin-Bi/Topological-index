@@ -3,14 +3,16 @@
 This manual is for the code implementation of the paper "Multiscale topological indices for the quantitative prediction of SARS CoV-2 binding affinity change upon mutations".
 
 
-Data
+#Data
+
 [6m0j-rbd1-pdb-file dataset](https://drive.google.com/drive/folders/1dUHg50WNLhfWOuAQj5Oa3HNMawTQuFeL?usp=sharing)
 
 
-Preparation
+#Preparation
 
 Code Requirements Platform: Python>=3.6
-Details about each step
+
+#Details about each step
 
 Step 1: read mutation coordinate from PDB
 
