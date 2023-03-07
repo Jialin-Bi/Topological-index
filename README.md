@@ -24,6 +24,11 @@ Python Packages needed: math, numpy>=1.19.5, scipy>=1.6.2, gudhi 3.7.1, networkx
 __Step 1__: read mutation coordinate from PDB
 
 Examples of mutated coordinates are in the “coordinates” folder
+```
+read_mutation_side_more.py is used to read atoms coordinates in the mutation domain of each mutant protein complex.
+
+read_origin_side_more.py is used to read atoms coordinates in the ralted mutation domain of wild type protein complex.
+```
 
 __Step 2:__ Simplicial complex representation and Topological indices generation
 
