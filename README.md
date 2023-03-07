@@ -16,7 +16,7 @@ Relevant data can be found in [6m0j-rbd1-pdb-file dataset](https://drive.google.
 ```
 Code Requirements Platform: Python>=3.6
 
-Python Packages needed: math, numpy>=1.19.5, scipy>=1.6.2, gudhi 3.7.1, networkx 2.5
+Python Packages needed: math, numpy>=1.19.5, scipy>=1.6.2, GUDHI 3.7.1, networkX 2.5
 ```
 
 ## Details about each step
