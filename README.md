@@ -48,5 +48,6 @@ __Step 3:__ Correlation between the topological index and binding affinity chang
 
 ```
 pearson_result_add.py is used for the correlation of all the datasets.
-pearson_result_add_group.py is used for the correlation of different group type
+
+pearson_result_add_group.py is used for the correlation of different group type.
 ```
